@@ -1,0 +1,21 @@
+{
+	"presets": [
+		["@babel/preset-env", {
+			"targets": {
+				"browsers" : "> 5%"
+			}
+		}]
+	],
+	"env" : {
+		"production": {
+			"presets": [
+				["@babel/preset-env", {
+					"targets": {
+						"node": 8
+					},
+					"modules": "commonjs"
+				}]
+			]
+		}
+	}
+}
