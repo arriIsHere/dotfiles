@@ -1,0 +1,30 @@
+{
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"node": 8
+				},
+				"modules": "commonjs",
+				"useBuiltIns": "usage",
+				"corejs": 3
+			}
+		],
+		[
+			"@babel/preset-typescript",
+			{
+				"allExtensions": true
+			}
+		]
+	],
+	"plugins" : [
+		[ 
+			"babel-plugin-root-import",
+			{
+				"rootPathPrefix": "/",
+				"rootPathSuffix": "src"
+			}
+		]
+	]
+}
